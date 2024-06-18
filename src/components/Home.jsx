@@ -9,7 +9,14 @@ import { FaEye } from "react-icons/fa";
 import { MdEdit, MdDelete } from "react-icons/md";
 import { Navigate } from "react-router-dom";
 
-const Home = ({ isAuthenticated, tasks, setTasks, taskTitle }) => {
+const Home = ({ isAuthenticated, taskTitle }) => {
+  const [tasks,setTasks] = useState([{
+    title:"Finish work",
+    description:"The deployment that is available to your visitors."
+  },{
+    title:"Finish work",
+    description:"The deployment that is available to your visitors."
+  }])
   const [showCreateModal, setShowCreateModal] = useState(false);
   const [showUpdateModal, setShowUpdateModal] = useState(false);
   const [showViewModal, setShowViewModal] = useState(false);
