@@ -5,7 +5,7 @@ import { Navigate } from "react-router-dom";
 const Profile = () => {
 const user = {
   name:"Ahmed",
-  avatar:"https://www.google.com/url?sa=i&url=https%3A%2F%2Fdepositphotos.com%2Fvector%2Fmale-avatar-profile-picture-vector-119675554.html&psig=AOvVaw1ojPmrs4wANZ2rmc_MiCij&ust=1718798635653000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJiA2oKO5YYDFQAAAAAdAAAAABAE",
+  avatar:"https://st2.depositphotos.com/1104517/11967/v/950/depositphotos_119675554-stock-illustration-male-avatar-profile-picture-vector.jpg",
   email:"ahmed@gmail.com",
   phone:"012342111"
   
