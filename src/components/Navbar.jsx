@@ -76,7 +76,7 @@ function Header({
   return (
     <Navbar
       expand="lg"
-      className={`bg-body-tertiary ${!isAuthenticated ? "d-none" : ""}`}
+      className={`bg-body-tertiary`}
     >
       <Container>
         <Navbar.Brand href="#home">TASK MANAGER</Navbar.Brand>
