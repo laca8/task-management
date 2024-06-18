@@ -4,7 +4,10 @@ import { Button, Modal, Stack } from "react-bootstrap";
 import toast from "react-hot-toast";
 
 const ViewTaskModal = ({ showViewModal, handleViewModalClose, id }) => {
-  const [task, setTask] = useState([]);
+  const [task, setTask] = useState([{
+    title:"Finish work",
+    description:"The deployment that is available to your visitors."
+  }]);
   useEffect(() => {
     const getSingleTask = async () => {
       await axios
