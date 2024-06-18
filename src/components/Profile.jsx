@@ -2,10 +2,14 @@ import React from "react";
 import { Container, Stack } from "react-bootstrap";
 import { Navigate } from "react-router-dom";
 
-const Profile = ({ user, isAuthenticated }) => {
-  if (!isAuthenticated) {
-    return <Navigate to={"/login"} />;
-  }
+const Profile = () => {
+const user = {
+  name:"Ahmed",
+  avatar:"",
+  email:"ahmed@gmail.com",
+  phone:"012342111"
+  
+}
   return (
     <>
       <Container className="my-4">
