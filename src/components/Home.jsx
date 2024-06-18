@@ -9,7 +9,7 @@ import { FaEye } from "react-icons/fa";
 import { MdEdit, MdDelete } from "react-icons/md";
 import { Navigate } from "react-router-dom";
 
-const Home = ({ isAuthenticated, taskTitle }) => {
+const Home = ({ taskTitle }) => {
   const [tasks,setTasks] = useState([{
     title:"Finish work",
     description:"The deployment that is available to your visitors."
@@ -68,7 +68,7 @@ const Home = ({ isAuthenticated, taskTitle }) => {
         </div>
       </div>
       <div className="row">
-        {tasks && tasks.length > 0 ? (
+        {tasks  ? (
           tasks.map((task) => (
             <div key={task._id} className="col-lg-3 col-md-4 col-sm-6">
               <Card style={{ marginBottom: "20px", minHeight: "400px" }}>
