@@ -46,9 +46,7 @@ const Home = ({ isAuthenticated, tasks, setTasks, taskTitle }) => {
     setShowViewModal(true);
   };
 
-  if (!isAuthenticated) {
-    return <Navigate to={"/login"} />;
-  }
+ 
 
   return (
     <div className="container my-4">
